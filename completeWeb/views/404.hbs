@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        404 error page
+    </title>
+
+    {{>head}}
+</head>
+
+<body>
+   
+    {{>nav}}
+
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                    <!-- left side  -->
+                    <div class="col-md-12 col-12 main_header_left align-items-center">
+                        <figure class="error">
+                            <img src="images/error.jpg" alt="user" class="img-fluid" title="Prince">
+                        </figure>
+                     {{!-- </div>
+                    <!-- right side  -->
+                    <div class="col-md-6 col-12 main_header_left"> --}}
+                        <p>Welcome to weather App</p>
+                        <h1><span>{{errormssg}}</span></h1>
+                        <a href="/"><button>Go HomePage</button></a>
+                    </div>
+
+                   
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+{{>footer}}
+
+</body>
+
+</html>
